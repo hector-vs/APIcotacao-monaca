@@ -10,22 +10,31 @@
   <link rel="stylesheet" href="components/loader.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-      #titulo{
+      #titulo, #comeco{
           text-align: center;
+      }
+      *{
+          margin: 0;
+          padding: 0;
       }
   </style>
 </head>
 <body>
     <div class="row">
+        <div class="col bg-white" id="comeco">
+            <span"><h2>Cotação de Moeda</h2></span>
+        </div>
+    </div>
+    <div class="row">
         <div class="col bg-dark" id="titulo">
-            <span style="color: white;"><h2>Cotação de Moedas</h2></span>
+            <span style="color: white;"><h2>Dolar para real</h2></span>
         </div>
     </div>
     <div class="row">
         <div class="col">
             <div class="form-group">
                 <div class="d-grid gap-2">
-                    <button class="btn btn-danger mt-3" id="cotar">Cotar</button>
+                    <button class="btn btn-dark mt-3" id="cotar">Cotar</button>
                 </div>
             </div>
         </div>
