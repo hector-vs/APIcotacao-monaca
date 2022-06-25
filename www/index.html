@@ -13,6 +13,19 @@
       #titulo, #comeco{
           text-align: center;
       }
+      #botoes{
+          margin-top: 5%;
+          text-align: center;
+      }
+      table{
+          font-size: 4vh;
+      }
+      body{
+          background-color: gray;
+      }
+      #cotar, #cotar2, #cotar3{
+          margin-top: 10%;
+      }
       *{
           margin: 0;
           padding: 0;
@@ -22,30 +35,40 @@
 <body>
     <div class="row">
         <div class="col bg-white" id="comeco">
-            <span"><h2>Cotação de Moeda</h2></span>
+            <span"><h1>Cotação de Moedas</h1></span>
         </div>
     </div>
     <div class="row">
         <div class="col bg-dark" id="titulo">
-            <span style="color: white;"><h2>Dolar para real</h2></span>
+            <span style="color: white;"><h2>Dolar para Real R$</h2></span>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="botoes">
         <div class="col">
-            <div class="form-group">
-                <div class="d-grid gap-2">
-                    <button class="btn btn-dark mt-3" id="cotar">Cotar</button>
-                </div>
-            </div>
+            <button id="cotar" type="button" class="btn btn-dark btn-lg ">Cotar</button>
         </div>
     </div>
     <div class="row">
         <div class="col mt-3">
-            <h3> Compra: <span id="compra"></span></h3>
-            <h3> Venda: <span id="venda"></span></h3>
-            <h3> Variação: <span id="variacao"></span></h3>
-            <h3> Máximo: <span id="maximo"></span></h3>
-            <h3> Mínimo: <span id="minimo"></span></h3>
+            <table class="table table-hover table-dark">
+                <tbody>
+                    <tr>
+                        <th scope="row"> Compra: </th><td><span id="compra"></span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> Venda: </th><td><span id="venda"></span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> Variação: </th><td><span id="variacao"></span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> Máximo: </th><td><span id="maximo"></span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> Mínimo: </th><td><span id="minimo"></span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
